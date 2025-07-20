@@ -351,3 +351,23 @@ body {
     width: 100%;
   }
 }
+
+.mobile-contain {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mobile-contain {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .mobile-contain img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
