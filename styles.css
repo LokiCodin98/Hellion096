@@ -187,7 +187,7 @@ body {
 .topnav {
     position: fixed;
     top: 0;           
-    width: 78.15%;      
+    width: 78.5%;      
     background-color: #333; 
     color: #fff;      
     padding: 15px;    
@@ -217,4 +217,39 @@ body {
 .contact-h {
   display: flex;
   justify-content: center;
+}
+
+
+#discord-invite {
+  border-top: 5px solid var(--color-gray-light);
+  border-bottom: 5px solid var(--color-gray-light);
+  color: purple;
+  text-shadow: 2px 2px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#discord {
+  color: purple;
+}
+
+#tiktok {
+  color: white;
+}
+
+#twitter {
+  color: white;
+}
+
+#youtube-a {
+  color: white;
+}
+
+#twitch-a {
+  color: white;
+}
+
+#lookaemote {
+  border: double white;
 }
