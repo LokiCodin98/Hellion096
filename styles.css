@@ -370,18 +370,19 @@ body {
     display: block;
     margin: 0 auto;
   }
-  .nav-container {
-    
-  }
 
-  .topnav {
-    flex-direction: row;       
-    justify-content: center;   
-    gap: 10px;                 
-  }
 
+ .topnav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: nowrap;
+    background-color: #444; 
   .topnav a {
-    padding: 8px 12px;         
-    font-size: 1rem;           
+    flex: 1 1 auto; 
+    text-align: center;
+    padding: 10px 5px;
+    white-space: nowrap; 
   }
 }
