@@ -292,3 +292,36 @@ body {
 #calculate-edpi:hover {
   background-color: var(--color-red);
 }
+
+
+@media (max-width: 768px) {
+  #site-box-outline {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .topnav {
+    width: 100%;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .text-block {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  #news-pic-outline {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .icon-grid {
+    grid-template-columns: 1fr; /* Stack icons vertically */
+    gap: 20px;
+  }
+}
