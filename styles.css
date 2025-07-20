@@ -253,3 +253,42 @@ body {
 #lookaemote {
   border: double white;
 }
+
+.meltstemp {
+  font-size: 19px;
+}
+
+#tiktoknews {
+  color: white;
+}
+
+.about-h3 {
+  color: yellow;
+}
+
+.about-tech-1 {
+  color: blue;
+}
+
+#edpi-converter input {
+  width: 200px;
+  padding: 8px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 1px solid var(--color-red-soft);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#calculate-edpi {
+  background-color: var(--color-red-dark);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#calculate-edpi:hover {
+  background-color: var(--color-red);
+}
