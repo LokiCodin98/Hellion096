@@ -295,33 +295,59 @@ body {
 
 
 @media (max-width: 768px) {
+
   #site-box-outline {
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 10px;
   }
 
   .topnav {
     width: 100%;
-    left: 0;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding: 10px;
   }
 
   .text-block {
     padding: 10px;
     font-size: 1rem;
+    line-height: 1.6;
   }
 
-  #news-pic-outline {
+  #news-pic-outline,
+  #contact-outline {
     padding-left: 20px;
     padding-right: 20px;
   }
 
   .icon-grid {
-    grid-template-columns: 1fr; /* Stack icons vertically */
+    grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .icon-box {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #about-outline {
+    margin-top: 100px;
+    padding: 15px;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #edpi-converter input {
+    width: 100%;
   }
 }
