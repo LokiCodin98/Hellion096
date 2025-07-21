@@ -34,6 +34,7 @@ body {
     border-width: 5px;
     box-shadow: 0 0 50px var(--color-red);
     padding-bottom: 60px; 
+    animation: pulseGlow 6s ease-in-out infinite;
 }
 .site-title {
   text-align: center;
@@ -120,6 +121,9 @@ body {
   line-height: 1.8;
   color: var(--color-white);
   padding: 20px;
+  opacity: 0;
+  animation: slideInFade 1.2s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
 .news-img {
@@ -202,6 +206,22 @@ body {
     color: #fff;      
     padding: 15px;    
     z-index: 100;    
+    transform: translateY(-100%);
+    animation: slideDownNav 1s ease-out forwards;
+    cursor: crosshair;
+
+}
+
+.topnav a {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 transparent;
+}
+
+.topnav a:hover {
+  color: var(--color-red);
+  background-color: var(--color-gray-dark);
+  box-shadow: 0 0 15px var(--color-red), 0 0 30px var(--color-red-dark);
+  transform: scale(1.05);
 }
 
 #about-outline {
@@ -340,6 +360,45 @@ body {
   margin-top: 20px;
 }
 
+.icon-box:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 5px var(--color-red);
+  animation: emberFade 0.6s ease-out forwards;
+}
+
+@keyframes slideDownNav {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 30px var(--color-red-dark);
+  }
+  50% {
+    box-shadow: 0 0 60px var(--color-red);
+  }
+  100% {
+    box-shadow: 0 0 30px var(--color-red-dark);
+  }
+}
+
+@keyframes slideInFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes waveEffect {
   0%, 100% {
     transform: translateY(0);
@@ -348,6 +407,18 @@ body {
     transform: translateY(-5px); 
   }
 }
+
+@keyframes emberFade {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
 
 #news, #news2, #news3 { 
   animation: waveEffect 4s ease-in-out infinite; 
