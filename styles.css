@@ -297,6 +297,56 @@ body {
 #calculate-edpi:hover {
   background-color: var(--color-red);
 }
+#game-sense-converter {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--color-gray-dark);
+  color: var(--color-white);
+  border-radius: 10px;
+  border: 2px solid var(--color-red-soft);
+}
+
+#game-sense-converter input {
+  width: 100%;
+  padding: 8px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 1px solid var(--color-red-soft);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#calculate-sens {
+  background-color: var(--color-red-dark);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#calculate-sens:hover {
+  background-color: var(--color-red);
+}
+
+#conversion-results {
+  margin-top: 20px;
+}
+
+@keyframes waveEffect {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); 
+  }
+}
+
+#news, #news2, #news3 { 
+  animation: waveEffect 4s ease-in-out infinite; 
+}
 
 
 @media (max-width: 768px) {
@@ -378,6 +428,7 @@ body {
     width: 100%;
     flex-wrap: nowrap;
     background-color: #444; 
+  
   .topnav a {
     flex: 1 1 auto; 
     text-align: center;
