@@ -143,6 +143,11 @@ body {
  
 }
 
+#newstext-outline {
+  border-right: double;
+  border-left: double;
+}
+
 #contact {
   display: flex;
   flex-direction: column;
