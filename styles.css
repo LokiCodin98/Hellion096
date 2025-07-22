@@ -82,6 +82,8 @@ body {
     box-shadow: 0 0 10px var(--color-black);
 }
 
+
+
 .contact {
     background-color: var(--color-red-soft);
     color: var(--color-white);
@@ -151,6 +153,11 @@ body {
   border-right: double;
   border-left: double;
 }
+
+#news-outline {
+  border-top: double;
+}
+
 
 #contact {
   display: flex;
