@@ -142,11 +142,12 @@ body {
 }
 
 #news-pic-outline {
- background-color: var(--color-red-dark);
- padding-left: 200px;
- padding-right: 200px;
- border: double black;
- 
+  background-color: var(--color-red-dark);
+  padding: 0;
+  margin: 0 auto;
+  border: none;
+  width: 100%;
+  max-width: 100%;
 }
 
 #newstext-outline {
