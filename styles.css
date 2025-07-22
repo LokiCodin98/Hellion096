@@ -178,6 +178,7 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   box-shadow: 0 0 10px rgba(255, 111, 60, 0.4);
+  animation: flashGlow 3s ease-in-out infinite;
 }
 
 
@@ -426,6 +427,15 @@ body {
   }
   100% {
     box-shadow: 0 0 30px var(--color-red-dark);
+  }
+}
+
+@keyframes flashGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 111, 60, 0.3), 0 0 10px rgba(255, 111, 60, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 111, 60, 0.8), 0 0 30px rgba(255, 71, 0, 0.6);
   }
 }
 
