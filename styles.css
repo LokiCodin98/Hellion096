@@ -51,6 +51,7 @@ body {
   border-radius: 50%;
   border: 2px solid var(--color-red);
   box-shadow: 0 0 10px var(--color-red-dark);
+  animation: pulseBorder 3s infinite ease-in-out;
 }
 .topnav {
   position: fixed;
@@ -255,6 +256,19 @@ body {
   transform: scale(1.05);
 }
 
+.center-a {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container a:hover {
+  animation: softGlow 1.5s ease-in-out infinite alternate;
+}
+
+.flicker {
+  animation: flickerGlitch 2s linear infinite;
+}
+
 #about-outline {
   max-width: 800px;
   margin: 0 auto;
@@ -418,6 +432,29 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes pulseBorder {
+  0% {
+    box-shadow: 0 0 10px var(--color-red-dark);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--color-red);
+  }
+  100% {
+    box-shadow: 0 0 10px var(--color-red-dark);
+  }
+}
+
+@keyframes flickerGlitch {
+  0%, 100% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.8;
+  }
+  66% {
+    opacity: 0.5;
+  }
+}
 
 @keyframes pulseGlow {
   0% {
@@ -440,10 +477,20 @@ body {
   }
 }
 
+@keyframes softGlow {
+  from {
+    box-shadow: 0 0 5px var(--color-red-soft);
+  }
+  to {
+    box-shadow: 0 0 15px var(--color-red);
+  }
+}
+
 @keyframes slideInFade {
   from {
     opacity: 0;
     transform: translateY(30px);
+    
   }
   to {
     opacity: 1;
