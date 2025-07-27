@@ -74,7 +74,7 @@ body {
     box-shadow: 0 0 10px var(--color-black);
 }
 
-.news {
+.stream {
     background-color: var(--color-red-soft);
     color: var(--color-white);
     padding: 10px 20px;
