@@ -89,7 +89,7 @@ h1 {
 }
 
 .nav-links a {
-  color: var(--color-red);
+  color: var(--color-gray-light);
   text-decoration: none;
   font-weight: bold;
   padding: 8px 15px;
