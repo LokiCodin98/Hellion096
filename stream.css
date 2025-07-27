@@ -22,7 +22,7 @@ body {
   color: var(--color-white);
   font-family: 'Inter', sans-serif;
   margin: 0;
-  padding: 80px 20px 40px; /* account for fixed nav */
+  padding: 80px 20px 40px; 
   min-height: 100vh;
   text-align: center;
 }
@@ -142,13 +142,13 @@ footer {
   .nav-links a {
     margin: 0 10px;
     padding: 6px 10px;
-    font-size: 0.9rem; /* slightly smaller font for narrow screens */
+    font-size: 0.9rem;
   }
 
   .icon-box {
-    width: 90%;          /* almost full width */
-    max-width: 300px;    /* limit max width */
-    padding-right: 15px; /* less right padding */
+    width: 90%;          
+    max-width: 300px;    
+    padding-right: 15px; 
   }
 
   .icon-img {
