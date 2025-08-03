@@ -129,6 +129,12 @@ body {
   animation-delay: 0.2s;
 }
 
+.news-gif {
+  width : 50%;
+  height: auto;
+  border: solid;
+}
+
 .news-img {
   width: 100%;
   max-width: 900px;
